@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicTacToe</name>
+    </assembly>
+    <members>
+        <member name="M:TicTacToe.Program.Main(System.String[])">
+            <summary>
+                The main entry point for the Tic Tac Toe application.
+            </summary>
+            <param name="args">Command-line arguments.</param>
+        </member>
+        <member name="M:TicTacToe.Program.IsGameOver(System.Char[],System.Char,System.Int32[]@)">
+            <summary>
+                Determines if the game is over. If a victory condition is met, returns 'true' and saves the winning combination.
+            </summary>
+            <param name="gameMarkers">An array of characters representing the current state of the game board.</param>
+            <param name="playerToMove">The character representing the player who is to make the next move ('X' or 'O').</param>
+            <param name="winningCombination">An array of integers representing the indices of the winning combination.</param>
+            <returns>True if the game is over, false otherwise.</returns>
+        </member>
+        <member name="M:TicTacToe.Program.GetPlayerInput">
+            <summary>
+                Reads and validates player's input. If valid, returns the input as a character.
+            </summary>
+            <returns>The player's input as a character.</returns>
+        </member>
+        <member name="M:TicTacToe.Program.IsValidNumber(System.String)">
+            <summary>
+                Validates if the player's input is a number between 1 and 9.
+            </summary>
+            <param name="playerInput">The player's input.</param>
+            <returns>True if the input is a number between 1 and 9, false otherwise.</returns>
+        </member>
+        <member name="M:TicTacToe.Program.HeadsUpDisplay(System.Char)">
+            <summary>
+                Displays the heads-up display (HUD) for the Tic Tac Toe game, showing the current player and prompting for their move.
+            </summary>
+            <param name="playerToMove">The character representing the player who is to make the next move ('X' or 'O').</param>
+        </member>
+        <member name="M:TicTacToe.Program.DrawGameBoard(System.Char[])">
+            <summary>
+                Draws the game board to the console, with the winning combination highlighted in red.
+            </summary>
+            <param name="gameMarkers">An array of characters representing the current state of the game board.</param>
+        </member>
+        <member name="M:TicTacToe.Program.DrawGameBoard(System.Char[],System.Int32[])">
+            <summary>
+                Draws the game board to the console, with the winning combination highlighted in red.
+            </summary>
+            <param name="gameMarkers">An array of characters representing the current state of the game board.</param>
+            <param name="winningCombination">An array of integers representing the indices of the winning combination.</param>
+        </member>
+    </members>
+</doc>
